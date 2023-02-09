@@ -1,9 +1,13 @@
+:root{
+    box-sizing: border-box;
+    font-size: 16px;
+}
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 200px 5fr;
 
-    height: 100vw;
+    /* height: 100vw; */
 }
 
 aside{
@@ -12,7 +16,11 @@ aside{
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: auto auto 1fr;
+    gap: 100px;
+    padding: 32px;
+    background-color: #0284c7;
+    color: white;
 }
 
 .header{
@@ -21,7 +29,8 @@ aside{
     
     display: grid;
     grid-template-rows: 1fr 1fr;
-    border: 2px solid blueviolet;
+   
+    padding: 32px;
 }
 
 .main-content{
@@ -31,22 +40,97 @@ aside{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-columns: 1f;
-}
+    background-color: #f0f9ff;
 
+}
+.projects-container{
+    padding: 32px;
+}
 .projects{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 32px;
+    
 }
 
 .header-top{
-    border: 2px solid blueviolet;
+    
     display: flex;
     justify-content: space-between;
+    height: 60px;
+    align-items: center;
     
+}
+
+.header-top :nth-child(1){
+    display: flex;
+}
+
+.header-top :nth-child(2){
+    display: flex;
 }
 
 .header-bottom{
     display: flex;
     justify-content: space-between;
+    height: 100px;
+    align-content: center;
+}
+.sidebar-top{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.sidebar-bottom{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.projects>div{
+    background-color: white;
+    padding: 32px 64px;
+    border-left: 16px solid sandybrown;
+    border-radius: 8px;
+    box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.09);
+}
+
+.announcements{
+    
+    margin: 32px;
+}
+
+.trending{
+    
+    margin: 32px;
+}
+
+.announcements>div{
+    background-color: #fff;
+    padding: 48px;
+    border-radius: 16px;
+    box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.09);
+
+}
+
+.trending>div{
+    background-color: #fff;
+    padding: 48px;
+    border-radius: 16px;
+    box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.09);
+}
+
+button{
+    border: none;
+    background-color: #0284c7;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 24px;
 }
